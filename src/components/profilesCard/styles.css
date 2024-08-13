@@ -1,0 +1,22 @@
+.card-socials {
+    padding: 32px;
+    box-sizing: border-box;
+    border-radius: 900px;
+    background: linear-gradient(90deg, rgb(255 255 255 / 7%) 0%, rgb(255 255 255 / 1%) 100%);
+    align-items: center;
+    align-content: center;
+    border: 1px solid rgba(255, 255, 255, 0.079);
+    display: flex;
+    justify-content: center;
+}
+
+.profilesIcons {
+    flex-direction: row;
+    display: flex;
+    background: linear-gradient(90deg, rgb(255 255 255 / 7%) 0%, rgb(255 255 255 / 1%) 100%);
+    padding: 16px;
+    box-sizing: border-box;
+    justify-content: space-between;
+}
+
+

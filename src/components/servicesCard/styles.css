@@ -1,0 +1,20 @@
+.services {
+    width: 150%;
+    overflow: hidden;
+    
+}
+
+.icons {
+    background-color: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 16px;
+    box-sizing: border-box;
+    background-color: transparent;
+    width: 32px;
+    gap: 64px;
+    transition: 2s;
+}
+
+
+
