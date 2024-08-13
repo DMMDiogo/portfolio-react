@@ -1,0 +1,26 @@
+.navbar-container {
+    display: flex;
+    align-self: center;
+    align-items: center;
+    max-width: 1200px;
+    justify-content: space-between;
+    margin: 32px auto;
+    flex-wrap: wrap;
+    gap: 12px;
+    
+}
+
+.logo {
+    font-family: 'Outfit';
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: -2px;
+    margin: 0px;
+}
+
+.links-container {
+    display: flex;
+    gap: 24px;
+    font-family: 'Inter';
+    font-size: 14px;
+}

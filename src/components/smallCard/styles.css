@@ -1,0 +1,44 @@
+
+.cursorTwo {
+    background-color: #646cff;
+    width: 120px;
+    aspect-ratio: 1/1;
+    position: absolute;
+    border-radius: 100px;
+  
+    z-index: -1000;
+    opacity: 0.5;
+    filter: blur(55px);
+   
+}
+
+
+.quarter {
+
+    width: 100%;
+    height: auto;
+    gap: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px;
+    
+}
+
+.card-quarter-image {
+    width: 100%;
+    min-height: 120px;
+    background-color: #646cff;
+    border-radius: 20px;
+}
+
+.card-quarter-text-button {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+h3 {
+    margin: 0px;
+    font-size: 20px;
+}
