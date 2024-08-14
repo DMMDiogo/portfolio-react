@@ -1,24 +1,16 @@
 import './styles.css';
 import { useState, useRef, useEffect } from 'react';
-import PhoneIcon from '../../assets/phone.svg'
-import PhotoIcon from '../../assets/photo.svg'
-import ColorIcon from '../../assets/colors.svg'
-import PenIcon from '../../assets/pen.svg'
-import CodingIcon from '../../assets/coding.svg'
-import ClickIcon from '../../assets/ads_click.svg'
-
+import DetailIcon from '../../assets/Detail Icon.svg'
 
 interface CardProps {
     title: string;
     subtitle: string;
 }
 
-const ServicesCard = ({ title, subtitle }: CardProps) => {
+const ContactCard = ({ title, subtitle }: CardProps) => {
     const [hover, setHover] = useState(false);
     const cardRef = useRef(null);
     const cursorRef = useRef(null);
-    const iconsRef = useRef(null)
-    const [hovericons, setHoverIcons] = useState({x: 0 });
 
     const handleMouseMove = (e) => {
         if (cardRef.current) {
@@ -34,14 +26,12 @@ const ServicesCard = ({ title, subtitle }: CardProps) => {
     useEffect(() => {
         const cardElement = cardRef.current;
         const cursorElement = cursorRef.current;
-        const iconsElement = iconsRef.current;
 
         if (cardElement && cursorElement) {
-            if (hover && hovericons) {
+            if (hover) {
                 cardElement.classList.add('hovering');
                 cursorElement.style.transform = `translate(${cursorPos.x - 90}px, ${cursorPos.y - 100}px)`;
                 cursorElement.style.display = 'block';
-                iconsElement.style.transform = `translate(${cursorPos.x - 250}px)`;
             } else {
                 cardElement.classList.remove('hovering');
                 cursorElement.style.display = 'none';
@@ -51,28 +41,22 @@ const ServicesCard = ({ title, subtitle }: CardProps) => {
 
     return (
         <div
-            className='card quarter services'
+            className='card quarter contactCard'
             ref={cardRef}
-            onMouseOver={() => {
-                setHover(true);
-                setHoverIcons(true);
-            }}
+            onMouseOver={() => setHover(true)}
             onMouseMove={handleMouseMove}
             onMouseOut={() => setHover(false)}
         >
             <div className='cursorTwo' ref={cursorRef}></div>
-            <div className='card-quarter-image icons' ref={iconsRef}>
-            <img src={PhotoIcon} />
-            <img src={PenIcon} />
-            <img src={ColorIcon} />
-            <img src={PhoneIcon} />
-            <img src={CodingIcon} />
-            <img src={ClickIcon} />
+            <div className='iconContact'>
+
+            <img src={DetailIcon} />
+
             </div>
             <div className='card-quarter-text-button'>
                 <div className='card-text-container'>
-                    <p className='subtitle'>{subtitle}</p>
-                    <h3>{title}</h3>
+                    <h1 className='headerContact'> Let's <br></br>
+                    Work <span>Together</span></h1>
                 </div>
                 <div className='button-container'>
                     <svg width="44" height="40" viewBox="0 0 46 42" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -86,4 +70,4 @@ const ServicesCard = ({ title, subtitle }: CardProps) => {
     );
 }
 
-export default ServicesCard;
+export default ContactCard;

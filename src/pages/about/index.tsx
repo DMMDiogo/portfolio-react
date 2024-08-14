@@ -2,7 +2,7 @@ import BigCard from "../../components/bigCard";
 import SmallCard from "../../components/smallCard";
 import MainContainer from "../../components/mainContainer";
 
-const Homepage = () => {
+const About = () => {
 	return (
 		<>
 		<MainContainer></MainContainer>
@@ -11,4 +11,4 @@ const Homepage = () => {
 	);
 };
 
-export default Homepage;
+export default About;

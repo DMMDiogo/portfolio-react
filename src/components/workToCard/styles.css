@@ -1,0 +1,21 @@
+.headerContact {
+    font-size: 48px;
+    margin: unset;
+    font-weight: 600;
+}
+
+span {
+    color: #646cff;
+
+}
+
+.contactCard {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.iconContact {
+    position: absolute;
+    top: 0;
+}

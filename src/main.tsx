@@ -12,11 +12,12 @@ import {
 	createBrowserRouter,
 } from "react-router-dom";
 import Homepage from './pages/homepage/index.tsx';
+import About from './pages/about/index.tsx'
 
 
 const router = createBrowserRouter([
 	{
-		path: "/",
+		path: "/home",
 		element: (
 			<Root>
 				<Homepage/>
@@ -25,10 +26,10 @@ const router = createBrowserRouter([
 	},
 
 	{
-		path: "/About",
+		path: "/about",
 		element: (
 			<Root>
-				
+				<About></About>
 			</Root>
 		),
 	},

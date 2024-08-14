@@ -1,0 +1,15 @@
+.numbers {
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.number {
+
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+    width: 100%;
+
+}

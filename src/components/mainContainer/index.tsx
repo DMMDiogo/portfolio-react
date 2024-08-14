@@ -4,6 +4,8 @@ import SmallCard from "../smallCard"
 import BigBreadcrumb from "../bigBreadcrumb"
 import ServicesCard from "../servicesCard"
 import ProfilesCard from "../profilesCard"
+import NumbersCard from "../numbersCard"
+import ContactCard from "../workToCard"
 
 
 const MainContainer = () => {
@@ -30,8 +32,8 @@ return (
             <ProfilesCard title="Profiles" subtitle="Stay With Me"></ProfilesCard>
         </div>
         <div className="thirdContainer">
-        <SmallCard></SmallCard>
-        <SmallCard></SmallCard>
+        <NumbersCard></NumbersCard>
+        <ContactCard></ContactCard>
        
         </div>
     </div>
