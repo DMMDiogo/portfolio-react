@@ -1,11 +1,11 @@
-import BigCard from "../../components/bigCard";
-import SmallCard from "../../components/smallCard";
-import MainContainer from "../../components/mainContainer";
+import AboutContainer from '../../components/aboutContainer'
 
 const About = () => {
 	return (
 		<>
-		<MainContainer></MainContainer>
+
+		<AboutContainer></AboutContainer>
+		
 
 		</>
 	);

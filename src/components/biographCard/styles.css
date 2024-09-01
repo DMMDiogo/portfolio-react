@@ -1,0 +1,13 @@
+.bio {
+   padding: 32px;
+}
+
+.paragraph {
+    font-size: 14px;
+    font-weight: 300;
+    margin-top: 4px;
+}
+
+.biocontent {
+    margin-top: auto;
+}

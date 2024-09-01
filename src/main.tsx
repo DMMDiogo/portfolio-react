@@ -16,25 +16,40 @@ import About from './pages/about/index.tsx'
 
 
 const router = createBrowserRouter([
-	{
-		path: "/home",
-		element: (
-			<Root>
-				<Homepage/>
-			</Root>
-		),
-	},
-
-	{
-		path: "/about",
-		element: (
-			<Root>
-				<About></About>
-			</Root>
-		),
-	},
-	
+    {
+        path: "/",
+        element: (
+            <Root>
+                <Homepage />
+            </Root>
+        ),
+    },
+    {
+        path: "/home",
+        element: (
+            <Root>
+                <Homepage />
+            </Root>
+        ),
+    },
+    {
+        path: "/about",
+        element: (
+            <Root>
+                <About />
+            </Root>
+        ),
+    },
+    {
+        path: "*",
+        element: (
+            <Root>
+                <h2>404 - Not Found</h2>
+            </Root>
+        ),
+    },
 ]);
+
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <>
